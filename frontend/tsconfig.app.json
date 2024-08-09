@@ -23,5 +23,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "/home/enock/hotel_booking_app/backend/src/models/hotel.ts"
+  ]
 }
