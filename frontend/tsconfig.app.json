@@ -25,6 +25,6 @@
   },
   "include": [
     "src",
-    "/home/enock/hotel_booking_app/backend/src/models/hotel.ts"
+    "/home/enock/hotel_booking_app/backend/src/shared/types.ts"
   ]
 }
