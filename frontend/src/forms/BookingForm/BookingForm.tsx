@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { UserType } from "../../../../backend/src/shared/types";
 import { useParams } from "react-router-dom";
 import { useSearchContext } from "../../contexts/SearchContext";
-import { useAppContext } from "../../contexts/AppContext";
+//import { useAppContext } from "../../contexts/AppContext";
 
 type Props = {
   currentUser: UserType;
@@ -25,9 +25,9 @@ const BookingForm = ({ currentUser }: Props) => {
   const search = useSearchContext();
   const { hotelId } = useParams();
 
-  const { showToast } = useAppContext();
+  //const { showToast } = useAppContext();
 
-  const { handleSubmit, register } = useForm<BookingFormData>({
+  const { register } = useForm<BookingFormData>({
     defaultValues: {
       firstName: currentUser.firstName,
       lastName: currentUser.lastName,
@@ -37,8 +37,8 @@ const BookingForm = ({ currentUser }: Props) => {
       checkIn: search.checkIn.toISOString(),
       checkOut: search.checkOut.toISOString(),
       hotelId: hotelId,
-      //   totalCost: paymentIntent.totalCost,
-      //   paymentIntentId: paymentIntent.paymentIntentId,
+      //totalCost: paymentIntent.totalCost,
+      // paymentIntentId: paymentIntent.paymentIntentId,
     },
   });
   return (
