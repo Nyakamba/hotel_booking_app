@@ -8,10 +8,6 @@ import StarRatingFilter from "../components/StarRatingFilter";
 import HotelTypesFilter from "../components/HotelTypesFilter";
 import FacilitiesFilter from "../components/FacilitiesFilter";
 import PriceFilter from "../components/PriceFilter";
-// import StarRatingFilter from "../components/StarRatingFilter";
-// import HotelTypesFilter from "../components/HotelTypesFilter";
-// import FacilitiesFilter from "../components/FacilitiesFilter";
-// import PriceFilter from "../components/PriceFilter";
 
 const Search = () => {
   const search = useSearchContext();
